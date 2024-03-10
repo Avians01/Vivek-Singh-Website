@@ -1,0 +1,90 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const abtme = document.getElementById('abtme');
+    const namefirst = document.querySelector('.namefirst');
+    const desc = document.getElementById('desc');
+
+    const parallaxFactor = 0.5; // Adjust the parallax factor
+    const fadeOutThreshold = 0.5; // Adjust the scroll position threshold for fade-out
+    const fadeTime = 1500; // Adjust the fade time
+    let scrolledDown = false;
+
+    window.addEventListener('scroll', function () {
+        const translateY = window.scrollY * parallaxFactor;
+        abtme.style.transform = `translateY(-${translateY}px)`;
+
+        // Handle fade-out effect for namefirst
+        const fadeOutOpacity = 1 - window.scrollY / (window.innerHeight * fadeOutThreshold);
+        namefirst.style.opacity = fadeOutOpacity > 1 ? 1 : (fadeOutOpacity < 0 ? 0 : fadeOutOpacity);
+
+        // Handle fade-in effect for desc
+        const fadeInOpacity = window.scrollY / (window.innerHeight * 0.3);
+        desc.style.opacity = fadeInOpacity > 1 ? 1 : fadeInOpacity;
+    });
+
+    // Set a timer to gradually fade out the namefirst section
+    setTimeout(function () {
+        scrolledDown = true;
+    }, fadeTime);
+});
+
+
+
+
+
+
+
+function toggleList(id, event) {
+    event.preventDefault();
+
+    var elements = document.querySelectorAll('.links-to-pts > ul');
+
+    elements.forEach(function (element) {
+        if (element.id === id) {
+            // Toggle visibility for the clicked element
+            element.classList.toggle('hidden');
+        } else {
+            // Hide other elements
+            element.classList.add('hidden');
+        }
+    });
+}
+
+toggleList('pt-one');
+
+
+
+
+
+
+
+
+
+
+const translateZ = window.scrollZ * parallaxFactor;
+        worktitle.style.transform = `translateZ(-${translateZ}px)`;
+
+        // Handle fade-out effect for worktitle
+        const fadeOutworktitle = 1 - window.scrollY / (window.innerHeight * 0.2);
+        worktitle.style.opacity = fadeOutworktitle > 1 ? 1 : (fadeOutworktitle < 0 ? 0 : fadeOutworktitle);
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+        
