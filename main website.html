@@ -11,54 +11,278 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+        <script src="https://kit.fontawesome.com/2c8384206f.js" crossorigin="anonymous"></script>
     </head>
 
     <body class="first-page">
 
-      <section class="name-first">
-        <h1>Vivek Singh</h1>
-        <h3>Solutions Architect and Production Manager</h3>
-        <img src="/media/pfp-wo-bg-vk.png" alt="pfp" id="pfp-main">
+      <section class="namefirst">
+        <h1 id="name">Vivek Singh</h1>
+        <h3 id="undernam">Solutions Architect and Production Manager</h3>
+        <img id="pfpmain" src="/media/pfp-wo-bg-vk.png" alt="pfp" >
       </section>
         
     </body>
 
+
+
+
   <!--<main class="et-main">-->
     <section class="about-me" id="tab-about">
-      <div class="custom-box">  
-      </div>
-      <h1>About Me</h1>
-      <h2 class="fixed-text">Hello, I am Vivek Singh </h2>
+      <h1 id="abtme">About Me</h1>
+    </section>
+
+   <!-- <section class="img-sli" id="images-slides">
+      <div class="slides-container">
+        <div class="slide"><img src="/media/sap logo.png" alt="SAP Logo"></div>
+        <div class="slide"><img src="/media/solution arch.png" alt="Solution Architecture"></div>
+        <div class="slide"><img src="/media/production manager.png" alt="Production Manager"></div>
+        <div class="slide"><img src="/media/business analyst.png" alt="Business Analyst"></div>
+        <div class="slide"><img src="/media/SAP-Ariba-Mid-Tile.jpg" alt="SAP Ariba"></div>
+    </div>
+  </section>
+-->
+<section class="details" id="desc">
+      <h2>Hello, I am Vivek Singh</h2>
+        <h4> Currently working as a Solutions Architect in TII (Technology Innovation Institute)</h4>
+        <p>With an extensive professional tenure exceeding 14 years, <br>I bring forth a robust 
+        foundation in both domain expertise and a decade-long specialization in SAP. </p>
+        <ul id="for-hover">
+          <li><a href="#pt-one" onclick="toggleList('pt-one', event)">SAP Expertise</a></li>
+          <li><a href="#pt-two" onclick="toggleList('pt-two', event)">Industry Insight and Project Leadership</a></li>
+          <li><a href="#pt-three" onclick="toggleList('pt-three', event)">Leadership and Global Engagement</a></li>
+          <li><a href="#pt-four" onclick="toggleList('pt-four', event)">Analytical and Communication Skills</a></li>
+          <li><a href="#pt-five" onclick="toggleList('pt-five', event)">Contributions and Excellence</a></li>
+        </ul>
+
+    <div class="custom-box" id="custom-box"></div>
+
+    <div class="links-to-pts">
+
+      <ul id="pt-one" class="hidden">
+          <li>Over 13 years of comprehensive SAP experience.</li>
+          <li>Full project lifecycle involvement, from requirements to maintenance.</li>
+          <li>Proficient in integrating SAP modules: Ariba, WM, PP, QM, SD, FI, CO.</li>
+          <li>Strong understanding of Source to Pay processes.</li>
+      </ul>
+    
+      <ul id="pt-two" class="hidden">
+          <li>Hands-on experience in aviation, automotive, defense, oil & gas,<br>and mining industries.</li>
+          <li> Consulting expertise in best practice supply chain processes.</li>
+          <li>Successfully led multiple implementations, upgrades, roll-outs<br>and support projects.</li>
+      </ul>
       
-      <h3> With an extensive professional tenure exceeding 14 years, I bring forth a robust foundation in both domain expertise and a decade-long specialization in SAP.
-        <br>My proficiency spans various SAP versions, showcasing a profound understanding of Source to Pay domains, including Sourcing, Procurement, and Inventory Management.
-        <br>Utilizing methodologies such as ASAP and ACTIVATE, I have demonstrated adept project execution skills, successfully integrating SAP modules such as Ariba, WM, PP, QM, SD, FI, and CO.
-        <br>My adaptability to global projects, coupled with strong analytical acumen, is evident in my leadership of multiple implementations, upgrades, roll-outs, and support projects. Beyond fostering collaborative environments through effective leadership and communication, I have made impactful contributions that extend beyond the professional realm.
-        <br>As a seasoned Business Analyst and SAP Consultant, I excel in crafting tailored solutions for complex business scenarios, driving operational efficiency, and catalyzing organizational growth.</h3>
-    </section>
+      <ul id="pt-three" class="hidden">
+          <li>Proven track record of strong leadership and management.</li>
+          <li>Over 11 years collaborating with C-level executives.</li>
+          <li>Defines and implements effective enterprise technology strategies.</li>
+          <li>Global delivery model expertise with direct engagement with<br>offshore development teams.</li>
+      </ul>
+      
+      <ul id="pt-four" class="hidden">
+        <li>Demonstrates analytical skills for complex business scenarios.</li>
+        <li>Adaptable to global projects with strong analytical agility.</li>
+        <li>Leadership and communication skills foster collaborative<br>environments.</li>
+      </ul>
+      
+      <ul id="pt-five" class="hidden">
+        <li>Made impactful contributions beyond the professional realm.</li>
+        <li>Excels as a Business Analyst and SAP Consultant.</li>
+        <li>Crafted strategic solutions, enhancing efficiency and driving<br>organizational growth.</li>
+      </ul>
+      
 
-    <!--<section class="skills" id="tab-skills">
-      <h1>Skills</h1>
-      <h3>something about flexbox</h3>
-    -->
+    </div>
 
-    </section>
+      </section>
+
+   
     <section class="work" id="tab-work">
-      <h2 class="edu">Work Experiance</h2>
+      <h2 id="worktitle">Work Experience</h2>
+    </section>
+
+    <section id="parentsection">
+
+      <section class="uae" id="uaeid">
+        <div class="uae-content">
+
+          <h2 id="textuae" class="slide-up" onclick="openModaluae()">
+            Digital Solutions for<br><span class="highlightuae" onclick="openModaluae()">UAE Clients</span>
+          </h2>
+          <img id="uaepic" src="/media/uae.png" alt="UAE Image"onclick="openModaluae()">
+        </div>
+      </section>
+
+      
+      
+
+    <section class="wipro" id="wiproid">
+      <div class="wipro-content">
+        <h2 id="textwipro" class="slide-up" onclick="openModalwipro()">
+          Senior Consultant at<br><span class="highlightwipro" onclick="openModalwipro()">Wipro Limited</span></h2>
+        <img id="wipropic" src="/media/Wipro_Primary_Logo_Color_RGB.svg" alt="wipro Image" onclick="openModalwipro()">
+      </div>
     </section>
 
 
-    <section class="projects" id="tab-projects">
-      <h1>Projects</h1>
-      <h3>something about angular</h3>
+
+    <section class="kpmg" id="kpmgid">
+      <div class="kpmg-content">
+        <h2 id="textkpmg" class="slide-up" onclick="openModalkpmg()">
+          Functional Consultant at<span class="highlightkpmg" onclick="openModalkpmg()"><br>KPMG Advisory</span></h2>
+        <img id="kpmgpic" src="/media/KPMGProfile-1024x1024.webp" alt="kpmg Image" onclick="openModalkpmg()">
+      </div>
     </section>
 
 
-    <section class="Contact" id="tab-contact">
-      <h1>Contact Me</h1>
-      <h3>something about other</h3>
+
+    <section class="kpit" id="kpitid">
+      <div class="kpit-content">
+        <h2 id="textkpit" class="slide-up">Functional Consultant at<br><span class="highlightkpit">KPIT Technologies</span></h2>
+        <img id="kpitpic" src="/media/KPIT Technologies Limited 4.jpg" alt="kpit Image">
+      </div>
     </section>
-  <!--</main>-->
+
+
+
+    <section class="hema" id="hemaid">
+      <div class="hema-content">
+        <h2 id="texthema" class="slide-up">Manager IT at<br><span class="highlighthema">Hema Engineering<br>Industry Ltd.</span></h2>
+        <img id="hemapic" src="/media/hema.jpg" alt="UAE Image" >
+      </div>
+    </section>
+  
+  </section>
+
+<!-- modals -->
+<div class="overlayuae" id="modalOverlayuae">
+  <div class="modaluae">
+    <span class="close-btnuae" onclick="closeModaluae()">&times;</span>
+    <img id="slide1"  src="/media/UAE projects modal/Slide1.JPG" alt="slide1">
+    <!-- <img id="mid" src="/media/mid img one.jpg" alt="mid img"> -->
+    <img id="slide2"  src="/media/UAE projects modal/Slide2.JPG" alt="slide2">
+    <img id="slide3"  src="/media/UAE projects modal/Slide3.JPG" alt="Slide3">
+    
+  </div>
+</div>
+
+<div class="overlaywipro" id="modalOverlaywipro">
+  <div class="modalwipro">
+    <span class="close-btnwipro" onclick="closeModalwipro()">&times;</span>
+    <img id="slide2.1"  src="/media/WIPRO projects modal/wipro modal.jpg" alt="slide4">
+  </div>
+</div>
+
+<div class="overlaykpmg" id="modalOverlaykpmg">
+  <div class="modalkpmg">
+    <span class="close-btnkpmg" onclick="closeModalkpmg()">&times;</span>
+    <img id="slide3.1"  src="/media/KPMG projects modal/Slide5.JPG" alt="slide5">
+    <img id="slide3.2"  src="/media/KPMG projects modal/Slide6.JPG"  alt="slide6">
+    <img id="slide3.3"  src="/media/KPMG projects modal/Slide7.JPG"  alt="slide7">
+    <img id="slide3.4"  src="/media/KPMG projects modal/Slide8.JPG"  alt="slide8">
+    <img id="slide3.5"  src="/media/KPMG projects modal/Slide9.JPG"  alt="slide9">
+  </div>
+</div>
+
+
+<section id="contact-box">
+<div class="background">
+  <div class="container">
+    <div class="screen">
+      <div class="screen-header">
+        <div class="screen-header-left">
+          <div class="screen-header-button close"></div>
+          <div class="screen-header-button maximize"></div>
+          <div class="screen-header-button minimize"></div>
+        </div>
+        <div class="screen-header-right">
+          <div class="screen-header-ellipsis"></div>
+          <div class="screen-header-ellipsis"></div>
+          <div class="screen-header-ellipsis"></div>
+        </div>
+      </div>
+      <div class="screen-body">
+        <div class="screen-body-item left">
+          <div class="app-title">
+            <span>CONTACT</span>
+            <span>ME</span>
+          </div>
+          <!-- <div class="app-contact">CONTACT INFO : +62 81 314 928 595</div> -->
+        </div>
+        <div class="screen-body-item">
+          <div class="app-form">
+            <div class="app-form-group">
+              <input class="app-form-control" placeholder="NAME">
+            </div>
+            <div class="app-form-group">
+              <input class="app-form-control" placeholder="EMAIL">
+            </div>
+            <div class="app-form-group">
+              <input class="app-form-control" placeholder="CONTACT NO">
+            </div>
+            <div class="app-form-group message">
+              <input class="app-form-control" placeholder="MESSAGE">
+            </div>
+            <div class="app-form-group buttons">
+              <button class="app-form-button">CANCEL</button>
+              <button class="app-form-button">SEND</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!-- right contact page --> 
+
+<div id="custom-box2"></div>
+
+<div class="custom-box3" id="custom-box3">
+  <ul class="contact-list">
+    <li class="list-item"><img width="30" id="logocon" src="/media/location logo.png" alt="logo1"> Banglore, India</lk>
+    <li class="list-item"><img width="30" id="logocon" src="/media/mail logo.png" alt="logo1"><a title="Give me a call"> (234)23546565 </a></li>
+    <li class="list-item"><img  width="30" id="logocon" src="/media/call logo.png" alt="logo1"><a href="mailto:cybervvk@gmail.com" target="_blank" title="Send me an email">cybervvk@gmail.com</a> </li>
+  
+  </ul>
+
+  <hr class="hrone">
+
+  <ul class="social-media-list">
+    <li><a href="https://linkedin.com/in/cybervvk" target="_blank" class="contact-icon">
+      <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    </li>
+    <li><a href="https://instagram.com/cybervvk" target="_blank" class="contact-icon">
+      <i class="fa fa-instagram" aria-hidden="true"></i></a>
+    </li>
+    <li><a href="#" target="_blank" class="contact-icon">
+      <i class="fa fa-twitter" aria-hidden="true"></i></a>
+    </li>
+    <li><a href="#" target="_blank" class="contact-icon">
+      <i class="fa fa-facebook" aria-hidden="true"></i></a>
+    </li>       
+  </ul>
+  
+  <hr class="hrtwo">
+  
+</div>
+
+
+<div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+
+
+
+
+</section>
+
+
+
+
+
+
+    
+
+
+
 
 </html>
